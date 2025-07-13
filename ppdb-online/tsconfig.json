@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["app/*"]
+    }, // Set alias
     "target": "ES2017",
     "lib": [
       "dom",
