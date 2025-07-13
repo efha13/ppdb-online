@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center bg-blue-50 text-blue-900 px-4 text-center">
       <img
-        src="https://image.shutterstock.com/image-vector/under-construction-apology-page-260nw-2161269781.jpg"
+        src="shutterstock-2299376241.jpg"
         alt="Halaman tidak ditemukan"
         className="w-64 mb-6 rounded-xl shadow-md"
       />
