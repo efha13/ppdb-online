@@ -14,13 +14,14 @@
 // File: app/layout.tsx
 import "./globals.css";
 import { Inter } from "next/font/google";
-import { SessionProvider } from "next-auth/react";
+// import { SessionProvider } from "next-auth/react";
+import SessionProviderWrapper from "./SessionProviderWrapper"; // Fix not found page
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Pendaftaran Online",
-  description: "Website pendaftaran dengan desain minimalis.",
+  description: "Website pendaftaran peserta didik baru online.",
 };
 
 // export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -35,7 +36,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="id">
       <body className={`${inter.className} bg-blue-50 text-blue-900 min-h-screen p-6`}>
-        <SessionProvider>{children}</SessionProvider>
+        <SessionProviderWrapper>{children}</SessionProviderWrapper>
       </body>
     </html>
   );
