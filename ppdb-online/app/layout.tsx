@@ -16,6 +16,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 // import { SessionProvider } from "next-auth/react";
 import SessionProviderWrapper from "./SessionProviderWrapper"; // Fix not found page
+import Header from "../components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
